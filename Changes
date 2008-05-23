@@ -1,3 +1,6 @@
+0.03  
+    - Handle the unmodified functions with typeglobs
+
 0.02  Fri May 23 18:39:43 GMT 2008
     - Forgot to remove some redundant if()s
     - Move DB stuff into a separate scope

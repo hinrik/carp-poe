@@ -9,14 +9,14 @@ use base qw(Exporter);
 our @EXPORT      = qw(confess croak carp);
 our @EXPORT_OK   = qw(cluck verbose);
 our @EXPORT_FAIL = qw(verbose);
-our $VERSION     = '0.02';
+our $VERSION     = '0.03';
 
 # from POE::Session
 my ($file, $line) = (CALLER_FILE, CALLER_LINE);
 
-sub export_fail { Carp::export_fail(@_) }
-sub confess     { die Carp::longmess(@_) . "\n" }
-sub cluck       { warn Carp::longmess(@_) . "\n" }
+*export_fail = *Carp::export_fail;
+*confess     = *Carp::confess;
+*cluck       = *Carp::cluck;
 
 sub croak {
     _is_handler()
