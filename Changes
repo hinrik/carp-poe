@@ -1,0 +1,7 @@
+0.02  Fri May 23 18:39:43 GMT 2008
+    - Forgot to remove some redundant if()s
+    - Move DB stuff into a separate scope
+
+0.01  Fri May 23 05:06:56 GMT 2008
+    - First CPAN release
+
