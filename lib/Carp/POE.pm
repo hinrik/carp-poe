@@ -9,7 +9,7 @@ use base qw(Exporter);
 our @EXPORT      = qw(confess croak carp);
 our @EXPORT_OK   = qw(cluck verbose);
 our @EXPORT_FAIL = qw(verbose);
-our $VERSION     = '0.03';
+our $VERSION     = '0.05';
 
 # from POE::Session
 my ($file, $line) = (CALLER_FILE, CALLER_LINE);
@@ -78,24 +78,25 @@ Carp::POE - Carp adapted to POE
 
 =head1 DESCRIPTION
 
-This module provides the same funcions as L<Carp|Carp>, but modifies
-the behavior of C<carp()> and C<croak> if called inside a POE event
-handler. The file/line names are replaced with POE::Session's
-C<$_[CALLER_FILE]> and C<$_[CALLER_LINE]>. This is useful as it will
-direct you to the code that posted the event instead of directing you to
-some subroutine in POE::Session which actually called the event handler.
+This module provides the same functions as L<Carp|Carp>, but modifies
+the behavior of C<carp()> and C<croak()> if called inside a L<POE|POE>
+event handler. The file names/line numbers are replaced with
+L<POE::Session|POE::Session>'s C<$_[CALLER_FILE]> and C<$_[CALLER_LINE]>.
+This is useful as it will direct you to the code that posted the event
+instead of directing you to some subroutine in POE::Session which actually
+called the event handler.
 
-Calls to C<carp()> and C<croak> in subroutines that are not POE event
+Calls to C<carp()> and C<croak()> in subroutines that are not POE event
 handlers will not be effected, so it's always safe to C<use Carp::POE>
 instead of C<Carp>.
 
 =head1 TODO
 
-Do something clever with C<cluck> and C<confess>.
+Do something clever with C<cluck()> and C<confess()>.
 
 =head1 BUGS
 
-Those go here: http://rt.cpan.org/Public/Dist/Display.html?Name=Carp%3A%3APOE
+Those go here: L<http://rt.cpan.org/Public/Dist/Display.html?Name=Carp%3A%3APOE>
 
 =head1 AUTHOR
 
