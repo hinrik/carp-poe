@@ -9,7 +9,7 @@ use base qw(Exporter);
 our @EXPORT      = qw(confess croak carp);
 our @EXPORT_OK   = qw(cluck verbose);
 our @EXPORT_FAIL = qw(verbose);
-our $VERSION     = '0.05';
+our $VERSION     = '0.07';
 
 # from POE::Session
 my ($file, $line) = (CALLER_FILE, CALLER_LINE);

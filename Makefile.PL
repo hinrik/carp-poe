@@ -12,6 +12,6 @@ WriteMakefile(
         'Carp'          => '0',
         'POE'           => '0',
         'Test::More'    => '0',
-        'Test::Warn'    => '0',
+        'Test::Warn'    => '0.11',
     }
 );
