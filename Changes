@@ -1,5 +1,6 @@
 0.08
     - Depend on Test::Warn to reduce CPAN tester FAILs
+    - Convert distribution to Module::Install
 
 0.07 Fri Sep 26 03:33:35 GMT 2008
     - Yep. Fixes it.
