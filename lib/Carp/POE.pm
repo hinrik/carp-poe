@@ -49,7 +49,8 @@ sub _caller_info {
 }
 
 1;
-__END__
+
+=encoding utf8
 
 =head1 NAME
 
