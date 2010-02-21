@@ -14,9 +14,12 @@ our $VERSION     = '0.07';
 # from POE::Session
 my ($file, $line) = (CALLER_FILE, CALLER_LINE);
 
-*export_fail = *Carp::export_fail;
-*confess     = *Carp::confess;
-*cluck       = *Carp::cluck;
+{
+    no warnings 'once';
+    *export_fail = *Carp::export_fail;
+    *confess     = *Carp::confess;
+    *cluck       = *Carp::cluck;
+}
 
 sub croak {
     _is_handler()
