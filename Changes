@@ -1,4 +1,4 @@
-0.08
+0.08 Sun Feb 21 02:58:36 GMT 2010
     - Depend on Test::Warn 0.20 to reduce CPAN tester FAILs
     - Convert distribution to Module::Install
     - Silence 'used only once' warnings
