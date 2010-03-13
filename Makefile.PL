@@ -8,10 +8,10 @@ author       ('Hinrik Örn Sigurðsson <hinrik.sig@gmail.com>');
 abstract_from('lib/Carp/POE.pm');
 version_from ('lib/Carp/POE.pm');
 license      ('perl');
-homepage     ('http://search.cpan.org/dist/Hailo');
-bugtracker   ('http://github.com/hinrik/hailo/issues');
+homepage     ('http://search.cpan.org/dist/Carp-POE');
+bugtracker   ('http://github.com/hinrik/carp-poe/issues');
 githubmeta   ();
-resources    (Ratings => 'http://cpanratings.perl.org/d/Hailo');
+resources    (Ratings => 'http://cpanratings.perl.org/d/Carp-POE');
 
 requires     ('Exporter'   => '0');
 requires     ('Carp'       => '0');
