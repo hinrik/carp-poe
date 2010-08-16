@@ -1,7 +1,6 @@
 ^Makefile$
 ^Carp-POE-
 \.old$
-\.bak$
 \.git
 ^pm_to_blib$
 ^blib/
