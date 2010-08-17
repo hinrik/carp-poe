@@ -1,5 +1,5 @@
 use strict;
-use warnings;
+use warnings FATAL => 'all';
 use Carp::POE;
 use POE;
 use Test::More tests => 1;

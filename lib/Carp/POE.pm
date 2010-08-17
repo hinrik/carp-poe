@@ -1,7 +1,7 @@
 package Carp::POE;
 
 use strict;
-use warnings;
+use warnings FATAL => 'all';
 use Carp ();
 use POE::Session;
 use base qw(Exporter);
