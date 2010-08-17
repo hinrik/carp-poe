@@ -1,6 +1,2 @@
-^Makefile$
 ^Carp-POE-
-\.old$
-\.git
-^pm_to_blib$
-^blib/
+^cover_db/

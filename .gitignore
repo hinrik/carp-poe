@@ -1,7 +1,3 @@
-Makefile
-Makefile.old
 Carp-POE-*
-blib
-pm_to_blib
 cover_db
 .build
