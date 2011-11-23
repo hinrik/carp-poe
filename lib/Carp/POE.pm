@@ -41,7 +41,8 @@ sub _is_handler {
 sub _caller_info {
     my @args = @_;
     {
-        package DB;
+        package
+        DB;
         my @throw_away = caller(2);
         return "@args at $DB::args[$file] line $DB::args[$line]";
     }
