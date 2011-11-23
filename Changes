@@ -1,4 +1,6 @@
 {{$NEXT}}
+
+0.10  Wed Nov 23 18:33:32 UTC 2011
     - Prevent dzil from adding $DB::AUTHORITY and $DB::VERSION
 
 0.09  Tue Aug 17 22:49:26 GMT 2010
