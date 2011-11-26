@@ -1,4 +1,5 @@
 {{$NEXT}}
+    - Add test for carp() inside synchronous event handlers
 
 0.10  Wed Nov 23 18:33:32 UTC 2011
     - Prevent dzil from adding $DB::AUTHORITY and $DB::VERSION
